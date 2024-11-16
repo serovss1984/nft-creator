@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Welcome, <%= username %>!</h1>
+  <form method="POST" action="/generate-nft" enctype="multipart/form-data">
+    <label for="image">Upload an image:</label>
+    <input type="file" id="image" name="image" accept="image/*" required>
+    <button type="submit">Generate NFT</button>
+  </form>
+  <a href="/logout">Logout</a>
+</body>
+</html>
